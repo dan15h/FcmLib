@@ -42,6 +42,6 @@ That's all. Enjoy easy implementation.
 
 
 ### To stop receiving notification from that topic
-you can easily remove FCM 
+you can easily remove FCM using topic name
 `FcmLib.removeFCM("topicName")`
 
