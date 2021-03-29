@@ -1,13 +1,33 @@
 # FcmLib
 
 
-### How to use
+## How to use
+
+### Setup Firebase with Project
 
 
-#### Todo: Add **google-services.json** to app
+#### Step-1: Add google-services.json
 Make sure to add **google-services.json** to your app.
 
+#### Step-2: In project level build.gradle add under buildScripte->Dependencies, Add ClassPath for Google services
+```
+ dependencies {
+        classpath 'com.google.gms:google-services:4.3.4'
+    }
+```
 
+#### Step-3: In app level build.gradle add plugin
+```
+apply plugin: 'com.android.application'
+// Add the following line:
+apply plugin: 'com.google.gms.google-services'  // Google Services plugin
+
+android {
+  // ...
+}
+```
+
+### Setup Library
 
 #### Step-1: In project level build.gradle add under allprojects->repositories
 ```
